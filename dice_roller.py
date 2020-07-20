@@ -6,7 +6,12 @@ def main():
         roll = random.randint(1,6)
     #dice_sum = dice_sum + roll
         dice_sum += roll
-        print(f'You rolled a {roll}')
+        if roll ==1:
+            print(f'You rolled a {roll}! Critical fail!')
+        elif roll ==6:
+            print(f'You rolled a {roll}! Critical succes!')
+        else:
+            print(f'You rolled a {roll}')
     print(f'Your sum is {dice_sum}')
 
 
